@@ -1,4 +1,4 @@
-# Hi there!Im Ramsha Baig ,pursing a Btech degree in AI&DS in SAKEC
+# Hi there! I'm Ramsha Baig ,pursing a Btech degree in AI&DS in SAKEC
 
 
 <!--
