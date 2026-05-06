@@ -1,4 +1,5 @@
-## Hi there 👋
+# Hi there!Im Ramsha Baig ,pursing a Btech degree in AI&DS in SAKEC
+
 
 <!--
 **ramshabaig978/ramshabaig978** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
