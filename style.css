@@ -1,42 +1,65 @@
+
 body {
 margin: 0;
 font-family: 'Segoe UI', sans-serif;
-background: #0047AB; /* Cobalt Blue */
+background: #0047AB;
+color: #333;
 }
 
-/* Header */
-header {
+/* Navbar */
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 30px;
+background: white;
+position: sticky;
+top: 0;
+}
+
+nav h2 {
+color: #0047AB;
+}
+
+.nav-links a {
+margin-left: 20px;
+text-decoration: none;
+color: #333;
+font-weight: 500;
+}
+
+/* Hero */
+.hero {
 text-align: center;
-padding: 60px 20px;
+padding: 80px 20px;
 color: white;
 }
 
-header p {
-margin-top: 10px;
-font-size: 18px;
-line-height: 1.5;
+.hero h1 {
+font-size: 36px;
 }
 
-/* Navigation Buttons */
-.nav-buttons {
+.hero-buttons {
 margin-top: 20px;
 }
 
 .btn {
-display: inline-block;
-margin: 8px;
-padding: 10px 18px;
 background: white;
 color: #0047AB;
+padding: 10px 20px;
 border-radius: 25px;
-font-weight: bold;
 text-decoration: none;
-transition: 0.3s;
+margin: 10px;
+font-weight: bold;
 }
 
-.btn:hover {
-background: #e6ecff;
-transform: scale(1.05);
+.btn-outline {
+border: 2px solid white;
+color: white;
+padding: 10px 20px;
+border-radius: 25px;
+text-decoration: none;
+margin: 10px;
 }
 
 /* Container */
@@ -52,22 +75,6 @@ background: white;
 padding: 25px;
 margin: 20px 0;
 border-radius: 15px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-transition: transform 0.3s;
-}
-
-.card:hover {
-transform: translateY(-6px);
-}
-
-/* Headings */
-h2 {
-color: #333;
-}
-
-h3 {
-margin-top: 15px;
-color: #555;
 }
 
 /* Lists */
@@ -81,42 +88,21 @@ margin-bottom: 6px;
 
 /* Social Buttons */
 .social-buttons {
-margin-top: 15px;
+margin-top: 10px;
 }
 
 .social-btn {
 display: inline-block;
-margin: 8px;
-padding: 10px 18px;
-color: white;
-border-radius: 25px;
-font-weight: bold;
-text-decoration: none;
-transition: 0.3s;
-}
-
-.social-btn i {
-margin-right: 8px;
-}
-
-/* GitHub */
-.social-btn:nth-child(1) {
+margin: 5px;
+padding: 12px;
+border-radius: 50%;
 background: #333;
+color: white;
+font-size: 18px;
 }
 
-/* LinkedIn */
 .social-btn:nth-child(2) {
 background: #0077b5;
 }
 
-/* Hover */
-.social-btn:hover {
-transform: translateY(-3px);
-box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-/* Links */
-a {
-text-decoration: none;
-}
 
