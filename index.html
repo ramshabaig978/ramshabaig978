@@ -21,7 +21,7 @@
 
     <header class="hero">
         <h1>Hi, I'm Ramsha Baig 👋</h1>
-        <p>AI & Data Science Student | Focused on Technical Growth</p>
+        <p>AI & Data Science Student | SAKEC</p>
         <div class="hero-buttons">
             <a href="#contact" class="btn">Contact Me</a>
             <a href="#projects" class="btn-outline">View Projects</a>
@@ -31,7 +31,7 @@
     <div class="container">
         <section id="about" class="card">
             <h2>About Me</h2>
-            <p>I am pursuing a BTech in AI and Data Science at SAKEC, building a foundation in programming and problem-solving.</p>
+            <p>I am pursuing a BTech in AI and Data Science. I focus on building core programming skills and exploring how data can solve real-world problems.</p>
             
             <h3>Areas of Interest</h3>
             <ul class="interest-list">
@@ -48,21 +48,21 @@
             <div class="achievement-box">
                 <p><strong>C Training</strong> - Spoken Tutorial (IIT Bombay)</p>
                 <button class="view-btn" onclick="toggleDisplay('certC')">Click to view certificate</button>
-                <img id="certC" src="c_certificate.png" alt="C Certificate" class="cert-img">
+                <img id="certC" src="c_cert.png" alt="C Certificate" class="cert-img">
             </div>
 
             <div class="achievement-box">
                 <p><strong>MATLAB Onramp</strong> - MathWorks</p>
                 <button class="view-btn" onclick="toggleDisplay('certMat')">Click to view certificate</button>
-                <img id="certMat" src="matlab_certificate.png" alt="MATLAB Certificate" class="cert-img">
+                <img id="certMat" src="matlab_cert.png" alt="MATLAB Certificate" class="cert-img">
             </div>
         </section>
 
         <section id="projects" class="card">
             <h2>Projects</h2>
             <div class="project-grid">
-                <button class="btn project-btn">Calculator</button>
-                <button class="btn project-btn">ATM Banking Simulation</button>
+                <button class="btn">Calculator</button>
+                <button class="btn">ATM Banking Simulation</button>
             </div>
         </section>
 
@@ -79,7 +79,12 @@
     <script>
         function toggleDisplay(id) {
             const element = document.getElementById(id);
-            element.style.display = (element.style.display === "block") ? "none" : "block";
+            // This checks the current display state and flips it
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
         }
     </script>
 </body>
