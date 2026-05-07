@@ -1,60 +1,86 @@
-<style>
-    .hidden-cert { display: none; margin-top: 15px; width: 100%; max-width: 500px; border: 1px solid #ddd; border-radius: 8px; }
-    .project-btn { margin-right: 10px; margin-bottom: 10px; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramsha Baig | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
 
-<div class="container">
-
-    <section id="about" class="card">
-        <h2>About Me</h2>
-        <p>
-            I am pursuing a BTech in Artificial Intelligence and Data Science at SAKEC. 
-            I focus on building core programming skills and improving through hands-on practice.
-        </p>
-        
-        <h3>Areas of Interest</h3>
-        <ul>
-            <li>Artificial Intelligence</li>
-            <li>Learning New Technologies</li>
-            <li>Programming</li>
-            <li>Web Technologies</li>
-        </ul>
-    </section>
-
-    <section id="achievements" class="card">
-        <h2>Achievements</h2>
-        
-        <div class="achievement-item">
-            <h3>C Training - Spoken Tutorial (IIT Bombay)</h3>
-            <button class="btn-outline" onclick="toggleCert('cert1')">Click to view certificate</button>
-            <img id="cert1" src="your_image_path_for_C_Cert.png" alt="C Certificate" class="hidden-cert">
+    <nav>
+        <h2>Ramsha</h2>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
+    </nav>
 
-        <div class="achievement-item" style="margin-top: 20px;">
-            <h3>MATLAB Onramp - MathWorks</h3>
-            <button class="btn-outline" onclick="toggleCert('cert2')">Click to view certificate</button>
-            <img id="cert2" src="your_image_path_for_MATLAB_Cert.png" alt="MATLAB Certificate" class="hidden-cert">
+    <header class="hero">
+        <h1>Hi, I'm Ramsha Baig 👋</h1>
+        <p>AI & Data Science Student | Focused on Technical Growth</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#projects" class="btn-outline">View Projects</a>
         </div>
-    </section>
+    </header>
 
-    <section id="projects" class="card">
-        <h2>Projects</h2>
-        <div class="project-buttons">
-            <button class="btn project-btn">Calculator</button>
-            <button class="btn project-btn">ATM Banking Simulation</button>
-        </div>
-    </section>
+    <div class="container">
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>I am pursuing a BTech in AI and Data Science at SAKEC, building a foundation in programming and problem-solving.</p>
+            
+            <h3>Areas of Interest</h3>
+            <ul class="interest-list">
+                <li><i class="fas fa-robot"></i> Artificial Intelligence</li>
+                <li><i class="fas fa-microchip"></i> Learning New Technologies</li>
+                <li><i class="fas fa-code"></i> Programming</li>
+                <li><i class="fas fa-globe"></i> Web Technologies</li>
+            </ul>
+        </section>
 
+        <section id="achievements" class="card">
+            <h2>Achievements</h2>
+            
+            <div class="achievement-box">
+                <p><strong>C Training</strong> - Spoken Tutorial (IIT Bombay)</p>
+                <button class="view-btn" onclick="toggleDisplay('certC')">Click to view certificate</button>
+                <img id="certC" src="c_certificate.png" alt="C Certificate" class="cert-img">
+            </div>
+
+            <div class="achievement-box">
+                <p><strong>MATLAB Onramp</strong> - MathWorks</p>
+                <button class="view-btn" onclick="toggleDisplay('certMat')">Click to view certificate</button>
+                <img id="certMat" src="matlab_certificate.png" alt="MATLAB Certificate" class="cert-img">
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <button class="btn project-btn">Calculator</button>
+                <button class="btn project-btn">ATM Banking Simulation</button>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:ramsha.baig25@sakec.ac.in">ramsha.baig25@sakec.ac.in</a></p>
+            <div class="social-buttons">
+                <a href="https://github.com/ramshabaig978" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-btn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
     </div>
 
-<script>
-    function toggleCert(id) {
-        var cert = document.getElementById(id);
-        if (cert.style.display === "block") {
-            cert.style.display = "none";
-        } else {
-            cert.style.display = "block";
+    <script>
+        function toggleDisplay(id) {
+            const element = document.getElementById(id);
+            element.style.display = (element.style.display === "block") ? "none" : "block";
         }
-    }
-</script>
-
+    </script>
+</body>
+</html>
