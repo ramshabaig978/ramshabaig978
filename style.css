@@ -63,21 +63,26 @@ h2 {
 .achievement-box {
     background: #fdfdfd;
     border: 1px solid #eee;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     margin-bottom: 15px;
+    text-align: center; /* Centers the button and the image */
+}
+
+.achievement-box p {
+    margin-top: 0;
+    font-weight: 600;
 }
 
 /* --- THE FIX FOR YOUR IMAGES --- */
 .cert-img {
-    display: none; /* Keeps them hidden until the JS function is called */
+    display: none; /* Hidden by default */
     width: 100%;
-    max-width: 600px; 
-    margin: 15px auto 0 auto;
+    max-width: 700px; /* Slightly larger for readability of forms */
+    margin: 20px auto 10px auto;
     border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    display: none; /* Ensure it stays hidden initially */
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* Buttons */
@@ -90,51 +95,35 @@ h2 {
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    transition: 0.3s;
+    transition: background 0.3s ease;
 }
 
 .view-btn {
-    background: #27ae60; /* Green for "View" actions */
+    background: #27ae60; 
     font-size: 0.9rem;
+    font-weight: bold;
 }
 
-.btn:hover, .view-btn:hover {
-    opacity: 0.8;
+.view-btn:hover {
+    background: #219150;
 }
-
-.btn-outline {
-    border: 2px solid white;
-    color: white;
-    padding: 8px 18px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-/* Icons & Lists */
-.interest-list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-}
-
-.interest-list i { color: #6e8efb; margin-right: 8px; }
 
 /* Social Buttons */
+.social-buttons {
+    margin-top: 15px;
+}
+
 .social-btn {
     font-size: 24px;
     margin-right: 15px;
     color: #2c3e50;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .social-btn:hover { color: #6e8efb; }
 
-/* Projects Grid */
+/* Project Grid */
 .project-grid {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap;
 }
