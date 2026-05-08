@@ -14,6 +14,7 @@
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#achievements">Achievements</a>
+            <a href="#academics">Academics</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
@@ -41,7 +42,33 @@
                 <li><i class="fas fa-globe"></i> Web Technologies</li>
             </ul>
         </section>
-        <section id="learning" class="card"> <h2>Currently Learning</h2> <ul> <li>C, C++, Python (Basics)</li> <li>Basic Data Structures</li> <li>Arrays, Loops, and Conditions</li> <li>Programming Fundamentals</li> </ul> </section> <section id="skills" class="card"> <h2>Skills</h2> <h3>Technical</h3> <ul> <li>C, Python (Basic)</li> <li>Data Structures (Basic)</li> <li>HTML, CSS</li> <li>Git & GitHub</li> </ul> <h3>Soft Skills</h3> <ul> <li>Quick Learner</li> <li>Adaptability</li> <li>Collaboration</li> </ul> </section>
+
+        <section id="learning" class="card"> 
+            <h2>Currently Learning</h2> 
+            <ul> 
+                <li>C, C++, Python (Basics)</li> 
+                <li>Basic Data Structures</li> 
+                <li>Arrays, Loops, and Conditions</li> 
+                <li>Programming Fundamentals</li> 
+            </ul> 
+        </section> 
+
+        <section id="skills" class="card"> 
+            <h2>Skills</h2> 
+            <h3>Technical</h3> 
+            <ul> 
+                <li>C, Python (Basic)</li> 
+                <li>Data Structures (Basic)</li> 
+                <li>HTML, CSS</li> 
+                <li>Git & GitHub</li> 
+            </ul> 
+            <h3>Soft Skills</h3> 
+            <ul> 
+                <li>Quick Learner</li> 
+                <li>Adaptability</li> 
+                <li>Collaboration</li> 
+            </ul> 
+        </section>
 
         <section id="achievements" class="card">
             <h2>Achievements</h2>
@@ -49,18 +76,44 @@
             <div class="achievement-box">
                 <p><strong>C Training</strong> - Spoken Tutorial (IIT Bombay)</p>
                 <button class="view-btn" onclick="toggleDisplay('certC')">Click to view certificate</button>
-               <img id="certC" src="c_cert.png" alt="C Certificate" class="cert-img">
-
-
+                <img id="certC" src="c_cert.png" alt="C Certificate" class="cert-img">
             </div>
 
             <div class="achievement-box">
                 <p><strong>MATLAB Onramp</strong> - MathWorks</p>
                 <button class="view-btn" onclick="toggleDisplay('certMat')">Click to view certificate</button>
-               <img id="certMat" src="matlab_cert.png" alt="MATLAB Certificate" class="cert-img">
+                <img id="certMat" src="matlab_cert.png" alt="MATLAB Certificate" class="cert-img">
             </div>
         </section>
-        <section id="goal" class="card"> <h2>My Goal</h2> <p> I aim to build a strong foundation in AI and Data Science, work on practical projects, and develop solutions that solve real-world problems while continuously improving my skills. </p> </section>
+
+        <section id="academics" class="card">
+            <h2>Academic Records</h2>
+            <div class="achievement-box">
+                <p><strong>SSC (10th Grade) Marksheet</strong></p>
+                <button class="view-btn" onclick="toggleDisplay('mark10')">Click to view marksheet</button>
+                <img id="mark10" src="10th_marksheet.png" alt="10th Marksheet" class="cert-img">
+            </div>
+
+            <div class="achievement-box">
+                <p><strong>HSC (12th Grade) Marksheet</strong></p>
+                <button class="view-btn" onclick="toggleDisplay('mark12')">Click to view marksheet</button>
+                <img id="mark12" src="12th_marksheet.png" alt="12th Marksheet" class="cert-img">
+            </div>
+        </section>
+
+        <section id="survey" class="card">
+            <h2>Survey Submissions</h2>
+            <div class="achievement-box">
+                <p><strong>Exit Survey Form</strong></p>
+                <button class="view-btn" onclick="toggleDisplay('exitSurvey')">View Submission Screenshot</button>
+                <img id="exitSurvey" src="exit_survey.png" alt="Exit Survey Screenshot" class="cert-img">
+            </div>
+        </section>
+
+        <section id="goal" class="card"> 
+            <h2>My Goal</h2> 
+            <p> I aim to build a strong foundation in AI and Data Science, work on practical projects, and develop solutions that solve real-world problems while continuously improving my skills. </p> 
+        </section>
 
         <section id="projects" class="card">
             <h2>Projects</h2>
@@ -75,9 +128,7 @@
             <p>Email: <a href="mailto:ramsha.baig25@sakec.ac.in">ramsha.baig25@sakec.ac.in</a></p>
             <div class="social-buttons">
                 <a href="https://github.com/ramshabaig978" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
-             <a href="https://www.linkedin.com/in/ramsha-baig-5b39a8408" target="_blank" class="social-btn">
-    <i class="fab fa-linkedin"></i>
-</a>
+                <a href="https://www.linkedin.com/in/ramsha-baig-5b39a8408" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
     </div>
@@ -85,7 +136,6 @@
     <script>
         function toggleDisplay(id) {
             const element = document.getElementById(id);
-            // This checks the current display state and flips it
             if (element.style.display === "block") {
                 element.style.display = "none";
             } else {
