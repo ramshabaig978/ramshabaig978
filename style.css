@@ -74,15 +74,15 @@ h2 {
     font-weight: 600;
 }
 
-/* --- THE FIX FOR YOUR IMAGES --- */
+/* Ensure this is the ONLY .cert-img block in your style.css */
 .cert-img {
-    display: none; /* Hidden by default */
+    display: none; 
     width: 100%;
-    max-width: 700px; /* Slightly larger for readability of forms */
-    margin: 20px auto 10px auto;
+    height: auto; /* Ensures the image isn't squished */
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    border: 1px solid #ccc;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* Buttons */
